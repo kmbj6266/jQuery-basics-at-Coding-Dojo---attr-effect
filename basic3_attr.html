@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset = "utf-8">
+	<title>basic3</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('img').click(function(){
+			var aux = $(this).attr('src')
+
+			$(this).attr('src', $(this).attr('alt-src'))
+				$(this).attr('alt-src', aux);
+	 })
+ })
+	</script>
+	
+</head>
+	<body>
+		<div>
+			<img src="girl-a.jpeg" alt-src="ninjagirl-a.jpeg">
+		</div>
+
+		<div>
+			<img src="girl1.jpeg" alt-src="ninjagirl1.jpeg">
+		</div>
+		
+		<div>
+			<img src="girl2.jpeg" alt-src="ninjagirl2.jpeg">
+		</div>
+
+		<div>
+			<img src="girl3.jpeg" alt-src="ninjagirl3.jpeg">
+		</div>
+
+		<div>
+			<img src="girl4.jpeg" alt-src="ninjagirl4.jpeg">
+		</div>
+
+
+	</body>
+</html>
+<!-- we use $(this).attr to refer to the attribute -->
